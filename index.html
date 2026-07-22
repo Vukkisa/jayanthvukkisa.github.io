@@ -32,18 +32,26 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <h2>Hi — I'm Jayanth.</h2>
+          <p>
+            <!-- EDIT ME: this is the single most important sentence on the page.
+                 Replace with your real numbers/specifics. Two placeholder options below —
+                 pick one, or write your own using this pattern: what you do + proof + where you're headed. -->
+            I build and maintain the data systems behind large-scale telecom billing —
+            work that has to be accurate down to the record, every time. I'm now applying that same
+            rigor to machine learning and data science, turning production discipline into predictive systems.
+          </p>
           <div class="cta-row">
             <a href="#projects" class="btn">See Projects</a>
             <a href="assests/Jayanth_Vukkisa_Resume.pdf" class="btn ghost">Download Resume</a>
           </div>
         </div>
         <div class="hero-right">
-          <div class="hero-card">
+          <img class="profile-photo" src="assests/IMG_3578.jpg" alt="Jayanth Vukkisa" loading="lazy" />
+          <div class="hero-card hero-card-compact">
             <div class="card-inner">
-              <p class="card-title">Contact</p>
-              <p>Phone: <a href="tel:+917093457687">+91-7093457687</a></p>
-              <p>Email: <a href="mailto:vukkisajayanth@gmail.com">vukkisajayanth@gmail.com</a></p>
-              <p>Location: Hyderabad, India</p>
+              <p>Hyderabad, India</p>
+              <p><a href="mailto:vukkisajayanth@gmail.com">vukkisajayanth@gmail.com</a></p>
+              <p><a href="tel:+917093457687">+91-7093457687</a></p>
             </div>
           </div>
         </div>
@@ -57,9 +65,13 @@
         <div class="about-content">
           <h2>About Me</h2>
           <p>
-            I'm passionate about solving real-world problems through data and intelligent automation.
-            At TCS, I work on large-scale billing and data systems, enabling seamless migration and analytics solutions.
-            My goal is to combine industry experience with AI-driven approaches to create smarter, scalable systems.
+            <!-- EDIT ME: replace with a real, specific detail only you would know —
+                 e.g. what pulled you toward ML specifically, a moment at TCS that sparked it,
+                 or the kind of problem you enjoy most. One concrete sentence beats three generic ones. -->
+            I got into data by way of billing systems that touch millions of customer records —
+            work where a single wrong field means a wrong invoice. That taught me to care about
+            correctness first. Now I'm channeling that same attention to detail into machine learning,
+            because I'd rather build systems that predict problems than ones that just report them.
           </p>
         </div>
       </div>
@@ -69,17 +81,28 @@
     <section class="section alt">
       <div class="container">
         <h3>Skills</h3>
-        <div class="skills-grid">
-          <div class="skill">Python</div>
-          <div class="skill">SQL & Data Analysis</div>
-          <div class="skill">Pandas & NumPy</div>
-          <div class="skill">Scikit-learn</div>
-          <div class="skill">Data Visualization</div>
-          <div class="skill">Statistical Analysis</div>
-          <div class="skill">Django</div>
-          <div class="skill">Linux / Shell</div>
-          <div class="skill">Git</div>
-          <div class="skill">AWS (Foundations)</div>
+
+        <div class="skill-group">
+          <p class="skill-group-title">Core — used daily</p>
+          <div class="skills-grid">
+            <div class="skill">SQL & Data Analysis</div>
+            <div class="skill">Python</div>
+            <div class="skill">Linux / Shell</div>
+            <div class="skill">Git</div>
+            <div class="skill">Data Migration</div>
+            <div class="skill">Django</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-title">Currently building</p>
+          <div class="skills-grid">
+            <div class="skill">Pandas & NumPy</div>
+            <div class="skill">Scikit-learn</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Statistical Analysis</div>
+            <div class="skill">AWS (Foundations)</div>
+          </div>
         </div>
       </div>
     </section>
@@ -93,13 +116,15 @@
           <h4>Assistant System Engineer — TCS</h4>
           <p class="meta">Sep 2023 – Present • Data Developer & AI Aspirant (Telecom billing / Kenan)</p>
           <ul>
-            <li>Collaborated on the migration of legacy billing systems into the Kenan billing platform, ensuring seamless data transition and technical compatibility.</li>
-            <li>Enhanced Financial Feeds by incorporating compatible and required fields to support new SSBS product requirements, ensuring accurate data flow and successful feed execution.</li>
-            <li>Implemented legal entity alignment updates to maintain correct entity mapping and ensure accurate billing representation in customer invoices.</li>
-            <li>Developed and generated charge inventory reports to validate customer billing data for consistency and correctness.</li>
-            <li>Enhanced pre-migration scripts to handle bulk CDR loads efficiently, ensuring smooth processing and accurate billing.</li>
-            <li>Managed CDR flow and configuration updates for migrating products, enabling accurate customer billing.</li>
-            <li>Resolved feed-handling issues affecting feed generation, improving billing reliability and ensuring timely data delivery to downstream teams.</li>
+            <!-- EDIT ME: bracketed items are placeholders — replace [ ] with your real numbers.
+                 Don't guess; if you don't know the exact figure, use your best honest estimate
+                 (e.g. "~2M records," "dozens of feed configs") rather than leaving it vague. -->
+            <li>Migrated legacy billing data into the Kenan billing platform for [X million] customer records, maintaining 100% billing accuracy with zero revenue loss during cutover.</li>
+            <li>Built and enhanced pre-migration scripts to handle bulk CDR loads, cutting processing time by [X%] / handling [X] records per run.</li>
+            <li>Diagnosed and resolved feed-handling issues that were causing [describe impact — delayed invoices, failed feeds, etc.], restoring on-time data delivery to downstream billing teams.</li>
+            <li>Enhanced Financial Feeds with new required fields to support SSBS product launches, preventing billing errors across [X] product lines.</li>
+            <li>Implemented legal entity alignment updates, correcting entity mapping across [X] customer accounts to ensure accurate invoicing.</li>
+            <li>Built charge inventory validation reports used by the team to catch billing discrepancies before they reached customers.</li>
             <li>Technologies: SQL, Data Analysis, Shell Scripting, Linux, Azure, Data Migration, Business Intelligence</li>
           </ul>
         </article>
@@ -107,7 +132,7 @@
         <article class="exp-item">
           <h4>Intern — TalentSprint</h4>
           <p class="meta">Mar 2023 – Sep 2023</p>
-          <p>Built the EZ-Learn website (interactive learning platform) using Python, Django, HTML/CSS, JS.</p>
+          <p>Built Ez-Learn, an interactive e-learning platform, from scratch using Python, Django, HTML/CSS and JS — later extended into the full project featured below.</p>
         </article>
       </div>
     </section>
@@ -120,13 +145,15 @@
         <div class="project-grid">
           <div class="project">
             <h4>🧠 Ez-Learn — AI-Powered E-Learning Platform</h4>
+            <!-- EDIT ME: add a real screenshot of the dashboard or course catalog here.
+                 <img src="assests/ezlearn-screenshot.png" alt="Ez-Learn student dashboard" loading="lazy" class="project-image" /> -->
             <div class="project-content">
               <h5>Problem</h5>
               <p>Traditional e-learning platforms create disconnected experiences across multiple systems for videos, progress tracking, payments, and instructor interaction, limiting scalability and user engagement.</p>
-              
+
               <h5>Solution</h5>
-              <p>Built a centralized, intelligent learning platform integrating course management, secure payments, and personalized progress tracking in one unified experience. This project was enhanced and improved using Cursor AI-assisted development tools, demonstrating proficiency with modern AI-powered coding environments.</p>
-              
+              <p>Built a centralized, intelligent learning platform integrating course management, secure payments, and personalized progress tracking in one unified experience. Used Cursor AI-assisted development throughout, applying it to speed up boilerplate work while making the architecture decisions myself.</p>
+
               <h5>Key Features</h5>
               <ul>
                 <li>Dynamic course catalog with enrollment system</li>
@@ -135,7 +162,6 @@
                 <li>Admin panel for comprehensive management</li>
                 <li>AI-ready module architecture for future recommendation engines</li>
               </ul>
-              
             </div>
             <div class="project-tech">
               <span class="tech-tag">Django</span>
@@ -151,34 +177,26 @@
           </div>
 
           <div class="project">
-            <h4>🏢 Legacy Billing System Migration to Kenan Platform & Revenue Assurance</h4>
+            <h4>🏢 Billing Platform Migration — Tata Consultancy Services</h4>
             <div class="project-content">
-              <h5>Industry Project — Tata Consultancy Services</h5>
-              <p>Enterprise-level billing system migration project involving the transition from legacy telecom billing infrastructure to the modern Kenan billing platform, serving large-scale telecom operations with millions of customer records.</p>
-              
-              <h5>Solution</h5>
-              <p>Led the migration of data from multiple legacy billing systems while maintaining 100% billing accuracy and zero revenue loss. Handled complex billing scenarios across voice, data, SMS, and value-added services.</p>
-              
-              <h5>Key Achievements</h5>
-              <ul>
-                <li>Developed comprehensive data migration strategies for customer billing data and transactional history</li>
-                <li>Enhanced financial feed processing systems to support new product requirements</li>
-                <li>Implemented legal entity alignment and charge inventory validation</li>
-                <li>Optimized CDR processing and bulk data loading for improved performance</li>
-                <li>Resolved critical feed-handling issues impacting billing operations</li>
-              </ul>
+              <h5>Context</h5>
+              <p>Confidential enterprise engagement — migrating a live telecom billing system to the Kenan platform for [X million] active customer accounts, with zero tolerance for billing errors during cutover. Full details on my specific contributions are in the Experience section above; this project can't be linked or screenshotted due to client confidentiality.</p>
+
+              <h5>My role & constraints</h5>
+              <p>One of a team of [X] engineers, focused on CDR (call detail record) processing, financial feed accuracy, and legal entity alignment. Every change had to be validated against production billing data before deployment — no room for a "fix it in the next release" approach.</p>
+
+              <h5>Outcome</h5>
+              <p>Migration completed with 100% billing accuracy and zero revenue loss across the accounts I worked on.</p>
             </div>
             <div class="project-tech">
               <span class="tech-tag">SQL</span>
               <span class="tech-tag">Data Migration</span>
               <span class="tech-tag">CDR Processing</span>
-              <span class="tech-tag">Data Validation</span>
               <span class="tech-tag">Revenue Assurance</span>
-              <span class="tech-tag">Enterprise Systems</span>
               <span class="tech-tag">Kenan Billing</span>
             </div>
             <div class="project-links">
-              <span class="btn btn-small ghost" style="opacity:0.8">Enterprise Project</span>
+              <span class="btn btn-small ghost" style="opacity:0.8">Confidential — details on request</span>
             </div>
           </div>
 
